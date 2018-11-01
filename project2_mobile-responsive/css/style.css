@@ -1,0 +1,274 @@
+/*======================
+base element styles
+========================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: inline;
+  text-align: center;
+  color: black;
+  background-color: silver;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header,
+footer {
+  font-weight: bold;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: white;
+}
+
+p {
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: darkgrey;
+}
+
+hr {
+    overflow: visible;
+    height: 5px;
+    text-align: center;
+    color: #333;
+    border: none;
+    border-top: 2px solid #333;
+}
+
+hr:after {
+    position: relative;
+    top: -13px;
+    padding: 0 4px;
+    background: #fff;
+}
+
+
+/* ================
+base layout styles
+=====================*/
+
+/* ---intro--- */
+
+.profile-img {
+  width: 80%;
+  margin: 0;
+  padding: 10px;
+}
+
+.intro {
+  padding: 20px;
+  color: dimgrey;
+}
+
+/* ---portfolio--- */
+.portfolio {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: white;
+}
+
+.project-img {
+  display: inline;
+  width: 100%;
+}
+
+.project {
+  margin: 10px;
+  background: white;
+}
+
+/* ---contact--- */
+.contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-me {
+  color: dimgrey;
+}
+
+
+
+/*========================
+media queries
+==========================*/
+
+/* 320px, 768px, 1024px */
+
+@media (min-width: 320px) {
+
+  footer .name {
+    float: left;
+    margin: 8px;
+  }
+
+  footer ul {
+    visibility: hidden;
+  }
+
+  .back-top {
+    float:right;
+    margin: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+.container {
+  width: 85%;
+  margin: 20px auto;
+}
+
+header .main-nav {
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+footer ul {
+  visibility: visible;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  margin-left: 15px;
+  background-color: silver;
+}
+
+.main-nav,
+.profile-img {
+  float: right;
+}
+
+.about {
+  float: left;
+  width: 50%;
+  font-size: 1.1rem;
+}
+
+.profile-img {
+  width: 45%
+}
+
+.project {
+  width: 45%;
+  margin: 1rem;
+}
+
+.desktop1,
+.desktop2 {
+  float: left;
+}
+
+footer .name {
+	float: left;
+	padding: 26px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.back-top {
+  display: none;
+}
+
+/* clearfix */
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+ }
+
+}
+
+@media (min-width:1024px) {
+
+  .container {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  header .main-nav {
+    float: right;
+    margin: 0px;
+  }
+
+  footer ul {
+    visibility: visible;
+  }
+
+  li {
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    background-color: silver;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .about {
+    float: left;
+    width: 50%;
+    font-size: 1.1rem;
+  }
+
+  .profile-img {
+    float: right;
+    width: 45%;
+  }
+
+  .project {
+    width: 31%;
+    margin: 10px;
+  }
+
+  .desktop1,
+  .desktop2 {
+    float: left;
+  }
+
+  footer .name {
+  	float: left;
+  	padding: 26px;
+  	font-size: 1rem;
+  	font-weight: bold;
+  }
+
+  .back-top {
+    display: none;
+  }
+
+  .clearfix::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+
+}
