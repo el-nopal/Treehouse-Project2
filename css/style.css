@@ -1,7 +1,6 @@
 /*======================
 base element styles
 ========================*/
-
 * {
   box-sizing: border-box;
 }
@@ -10,7 +9,7 @@ body {
   display: inline;
   text-align: center;
   color: black;
-  background-color: silver;
+  background-color: #4abdac;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -20,24 +19,22 @@ footer {
 }
 
 ul {
-  padding: 0px;
   list-style: none;
+  padding: 0;
 }
 
 li {
   margin: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: white;
+  padding: 10px 0;
+  background-color: white;
 }
 
 p {
-  margin: 10px;
-  padding: 10px;
+  margin: 20px 10px;
 }
 
 img {
-  max-width: 100%
+  width: 100%
 }
 
 a {
@@ -46,191 +43,147 @@ a {
 }
 
 a:hover {
-  color: darkgrey;
+  color: #fc4a1a;
 }
 
 hr {
-    overflow: visible;
-    height: 5px;
-    text-align: center;
-    color: #333;
-    border: none;
-    border-top: 2px solid #333;
+  width: 90%;
+  border: 1px solid black;
 }
-
-hr:after {
-    position: relative;
-    top: -13px;
-    padding: 0 4px;
-    background: #fff;
-}
-
 
 /* ================
 base layout styles
 =====================*/
 
 /* ---intro--- */
-
-.profile-img {
-  width: 80%;
-  margin: 0;
-  padding: 10px;
+.intro {
+  margin: 30px 0;
 }
 
-.intro {
-  padding: 20px;
-  color: dimgrey;
+.profile-img {
+  width: 70%;
 }
 
 /* ---portfolio--- */
 .portfolio {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: white;
-}
-
-.project-img {
-  display: inline;
-  width: 100%;
+  padding: 30px 0;
+  background-color: white;
 }
 
 .project {
-  margin: 10px;
-  background: white;
+  margin: 15px;
 }
 
 /* ---contact--- */
 .contact {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 60px auto;
+  max-width: 500px;
 }
 
-.contact-me {
-  color: dimgrey;
+footer {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
 
+footer .name {
+  float: left;
+  margin: 1rem;
+}
 
+footer ul {
+  display: none ;
+}
+
+.back-top {
+  float:right;
+  margin: 1.125rem;
+}
 
 /*========================
 media queries
 ==========================*/
+@media (min-width: 768px) {
+  header {
+    margin-top: 50px;
+  }
 
-/* 320px, 768px, 1024px */
+  li {
+    display: inline;
+    background-color: transparent;
+  }
 
-@media (min-width: 320px) {
+  .intro {
+    margin: 30px;
+  }
+
+  .profile-img {
+    float: right;
+  }
+
+  .about {
+    float: left;
+    width: 395px;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .profile-img {
+    width: 290px;
+  }
+
+  .project-group {
+    margin: 20px;
+  }
+
+  .project {
+    width: 45%;
+    margin: 1rem;
+  }
+
+  .desktop1,
+  .desktop2 {
+    float: left;
+  }
 
   footer .name {
-    float: left;
-    margin: 8px;
+  	float: left;
   }
 
   footer ul {
-    visibility: hidden;
+    display: inline;
+    float: right;
   }
 
   .back-top {
-    float:right;
-    margin: 1.125rem;
+    display: none;
   }
-}
 
-@media (min-width: 768px) {
-
-.container {
-  width: 85%;
-  margin: 20px auto;
-}
-
-header .main-nav {
-  margin-right: 30%;
-  margin-left: 30%;
-}
-
-footer ul {
-  visibility: visible;
-}
-
-li {
-  display: inline-block;
-  float: left;
-  margin-left: 15px;
-  background-color: silver;
-}
-
-.main-nav,
-.profile-img {
-  float: right;
-}
-
-.about {
-  float: left;
-  width: 50%;
-  font-size: 1.1rem;
-}
-
-.profile-img {
-  width: 45%
-}
-
-.project {
-  width: 45%;
-  margin: 1rem;
-}
-
-.desktop1,
-.desktop2 {
-  float: left;
-}
-
-footer .name {
-	float: left;
-	padding: 26px;
-	font-size: 1rem;
-	font-weight: bold;
-}
-
-.back-top {
-  display: none;
-}
-
-/* clearfix */
-
-.clearfix::after {
-  display: table;
-  clear: both;
-  content: "";
- }
-
+  /* clearfix */
+  .clearfix::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 }
 
 @media (min-width:1024px) {
 
   .container {
-    width: 85%;
-    margin: 20px auto;
-  }
-
-  header .main-nav {
-    float: right;
-    margin: 0px;
-  }
-
-  footer ul {
-    visibility: visible;
-  }
-
-  li {
-    display: inline-block;
-    float: left;
-    margin-left: 15px;
-    background-color: silver;
+    max-width: 910px;
+    margin: 0 auto;
   }
 
   .name {
     float: left;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  li {
+    display: inline-block;
   }
 
   .about {
@@ -241,7 +194,8 @@ footer .name {
 
   .profile-img {
     float: right;
-    width: 45%;
+    width: 370px;
+    margin: 20px;
   }
 
   .project {
@@ -249,26 +203,15 @@ footer .name {
     margin: 10px;
   }
 
-  .desktop1,
-  .desktop2 {
-    float: left;
+  hr {
+    max-width: 890px;
+  }
+
+  .contact {
+    margin: 60px auto;
   }
 
   footer .name {
-  	float: left;
   	padding: 26px;
-  	font-size: 1rem;
-  	font-weight: bold;
   }
-
-  .back-top {
-    display: none;
-  }
-
-  .clearfix::after {
-    display: table;
-    clear: both;
-    content: "";
-  }
-
 }

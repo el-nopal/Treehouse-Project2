@@ -1,4 +1,4 @@
-Instructions:
+Project Instructions:
 Create your file structure:
 
 Create an index.html and styles.css file.
