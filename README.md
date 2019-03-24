@@ -1,4 +1,6 @@
-=== Treehouse FEWD PROJECT 2 - Mobile-first Responsive Layout ===
+### Treehouse FEWD PROJECT 2 - Mobile-first Responsive Layout
+
+<hr>
 
 Description:
 In this project, I built a responsive, mobile-first layout using HTML and CSS. The layout demonstrates an understanding of responsive design by adjusting to accommodate small, medium, and large screen sizes.
